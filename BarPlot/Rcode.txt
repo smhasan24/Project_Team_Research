@@ -1,0 +1,94 @@
+R version 4.4.2 (2024-10-31 ucrt) -- "Pile of Leaves"
+Copyright (C) 2024 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> library(ggplot2)
+> library(dplyr)
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+> library(dplyr)
+> placement_data <- read.csv("path_to_your_file/Dataset_Placement_Data_Full_Class.csv")
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'path_to_your_file/Dataset_Placement_Data_Full_Class.csv': No such file or directory
+> 
+> 
+> load("D:/VS_Code/Project_Team_Research/Dataset_Placement_Data_Full_Class.csv")
+Error in load("D:/VS_Code/Project_Team_Research/Dataset_Placement_Data_Full_Class.csv") : 
+  bad restore file magic number (file may be corrupted) -- no data loaded
+In addition: Warning message:
+file ‘Dataset_Placement_Data_Full_Class.csv’ has magic number 'sl_no'
+  Use of save versions prior to 2 is deprecated 
+> library(readr)
+> Dataset_Placement_Data_Full_Class <- read_csv("D:/VS_Code/Project_Team_Research/Dataset_Placement_Data_Full_Class.csv")
+Rows: 215 Columns: 15                                                                              
+── Column specification ───────────────────────────────────────────────────────────────────────────
+Delimiter: ","
+chr (8): gender, ssc_b, hsc_b, hsc_s, degree_t, workex, specialisation, status
+dbl (7): sl_no, ssc_p, hsc_p, degree_p, etest_p, mba_p, salary
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+> View(Dataset_Placement_Data_Full_Class)
+> placement_data <- read.csv("D:/VS_Code/Project_Team_Research/Dataset_Placement_Data_Full_Class.csv")
+> # Convert relevant columns to factors for analysis
+> placement_data$gender <- as.factor(placement_data$gender)
+> placement_data$status <- as.factor(placement_data$status)
+> 
+> 
+> # Step 1: Calculate Proportions for Normalization
+> placement_normalized <- placement_data %>%
++     group_by(gender, status) %>%
++     summarise(count = n()) %>%
++     mutate(total = sum(count)) %>%
++     mutate(proportion = count / total)  # Normalized values for each gender
+`summarise()` has grouped output by 'gender'. You
+can override using the `.groups` argument.
+> 
+> print(placement_normalized)
+# A tibble: 4 × 5
+# Groups:   gender [2]
+  gender status     count total proportion
+  <fct>  <fct>      <int> <int>      <dbl>
+1 F      Not Placed    28    76      0.368
+2 F      Placed        48    76      0.632
+3 M      Not Placed    39   139      0.281
+4 M      Placed       100   139      0.719
+> 
+> 
+> 
+> 
+> # Step 2: Stacked, Normalized Bar Chart
+> ggplot(placement_normalized, aes(x = gender, y = proportion, fill = status)) +
++     geom_bar(stat = "identity", position = "fill") +  # "fill" for normalized stacking
++     labs(title = "Normalized Placement Status by Gender",
++          x = "Gender",
++          y = "Proportion",
++          fill = "Placement Status") +
++     scale_y_continuous(labels = scales::percent) +  # Convert y-axis to percentage
++     scale_fill_manual(values = c("Placed" = "blue", "Not Placed" = "red")) +
++     theme_minimal()
