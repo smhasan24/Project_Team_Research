@@ -1,0 +1,50 @@
+
+R version 4.4.2 (2024-10-31 ucrt) -- "Pile of Leaves"
+Copyright (C) 2024 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> library(readr)
+> Dataset_Placement_Data_Full_Class <- read_csv("D:/VS_Code/Project_Team_Research/Dataset_Placement_Data_Full_Class.csv")
+Rows: 215 Columns: 15                                                        
+── Column specification ─────────────────────────────────────────────────────
+Delimiter: ","
+chr (8): gender, ssc_b, hsc_b, hsc_s, degree_t, workex, specialisation, s...
+dbl (7): sl_no, ssc_p, hsc_p, degree_p, etest_p, mba_p, salary
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+> View(Dataset_Placement_Data_Full_Class)
+> # Load the dataset
+> placement_data <- read.csv("D:/VS_Code/Project_Team_Research/Dataset_Placement_Data_Full_Class.csv")
+> 
+> # Convert gender and status to factors
+> placement_data$gender <- as.factor(placement_data$gender)
+> placement_data$status <- as.factor(placement_data$status)
+> 
+> # Create a contingency table
+> placement_table <- table(placement_data$gender, placement_data$status)
+> 
+> # Perform Chi-Square Test
+> chi_test <- chisq.test(placement_table)
+> 
+> # Display results
+> chi_test
+
+	Pearson's Chi-squared test with Yates' continuity correction
+
+data:  placement_table
+X-squared = 1.3818, df = 1, p-value = 0.2398
