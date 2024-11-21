@@ -4,6 +4,18 @@
 ## **Overview**
 This repository contains the code and resources for the **Team Research and Development Assignment** as part of the coursework. The project analyses placement status among students based on gender using statistical methods. It aims to draw meaningful conclusions about potential disparities and provide actionable insights.
 
+## What's Inside
+
+- **R_Visualization/**: R scripts used to create different visualizations of the data.
+
+BarPlot: Scripts specifically for generating bar plots.
+
+.gitignore: Lists files that Git should ignore (like temporary files).
+
+- **A-64 Team Research and Development Presentation Slide.pptx**: A PowerPoint presentation of our team research and result.
+  
+- **Dataset_Placement_Data_Full_Class.csv**: The main dataset containing students placement detail.
+
 ## **Features**
 - Data preprocessing and cleaning scripts.
 - Statistical analysis, including Chi-Square tests.
