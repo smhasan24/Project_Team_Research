@@ -7,7 +7,7 @@ This repository contains the code and resources for the **Team Research and Deve
 ## **Features**
 - Data preprocessing and cleaning scripts.
 - Statistical analysis, including Chi-Square tests.
-- Visualizations, such as bar charts and histograms.
+- Visualizations, such as bar charts and chart Table
 - Comprehensive R scripts for data exploration and hypothesis testing.
 - Git log tracking for project transparency.
 
@@ -49,6 +49,21 @@ This repository contains the code and resources for the **Team Research and Deve
 
 ## **Results**
 The key findings of the analysis will be included in the `results/` directory. Statistical outputs and visualizations are provided to support conclusions.
+
+# **Project: Team Research and Development Assignment**
+
+## **Visualizations**
+The project includes statistical visualizations generated using R. Below is an example of a stacked bar chart with normalized proportions created to visualize the relationship between gender and placement status:
+
+### Stacked Bar Chart
+![Stacked Bar Chart](BarPlot/Normalized_Placement_Status_By_Gender.jpg)
+
+> *This chart illustrates the proportion of placed and not placed students by gender.*
+
+### How to View Visualizations
+All visualizations are stored in the `visualizations/` directory. Clone the repository and navigate to the folder to view additional plots.
+
+
 
 ## **Contributing**
 Contributions are welcome! If you’d like to improve or expand the project:
