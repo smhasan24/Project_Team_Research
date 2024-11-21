@@ -16,6 +16,27 @@ BarPlot: Scripts specifically for generating bar plots.
   
 - **Dataset_Placement_Data_Full_Class.csv**: The main dataset containing students placement detail.
 
+
+
+## Getting Started
+
+1. Clone the repository to your local machine.
+
+
+```bash
+
+   git clone https://github.com/smhasan24/Project_Team_Research.git
+
+
+2. Load the dataset in to your preferred tool (i.e., R):
+
+```{r message=FALSE}
+dataset <- read.csv('Path where your CSV file is located on your computer\\File Name.csv')
+
+3.	Look at the visualizations in the R_Visualization folder to get insights on data.
+4.	Go through our PowerPoint presentation for project summary (A-64 Team Research and Development Presentation Slide.pptx) .
+
+
 ## **Features**
 - Data preprocessing and cleaning scripts.
 - Statistical analysis, including Chi-Square tests.
