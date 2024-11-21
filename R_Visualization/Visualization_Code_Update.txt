@@ -1,0 +1,58 @@
+# Load necessary libraries
+library(ggplot2)
+library(dplyr)
+library(broom)
+
+# Load the dataset
+placement_data <- read.csv("Dataset_Placement_Data_Full_Class.csv")
+
+# Convert relevant columns to factors for analysis
+placement_data$gender <- as.factor(placement_data$gender)
+placement_data$status <- as.factor(placement_data$status)
+
+# Step 1: Placement Rates by Gender
+placement_rate <- placement_data %>%
+  group_by(gender, status) %>%
+  summarise(count = n()) %>%
+  mutate(total = sum(count)) %>%
+  mutate(placement_rate = count / total) %>%
+  filter(status == "Placed")
+
+print(placement_rate)
+
+# Step 2: Calculate 95% Confidence Intervals for Placement Rates
+placement_ci <- placement_rate %>%
+  mutate(lower_ci = qbinom(0.025, total, placement_rate) / total,
+         upper_ci = qbinom(0.975, total, placement_rate) / total)
+
+print(placement_ci)
+
+# Step 3: Logistic Regression Analysis to predict Placement Status by Gender
+# Recode "status" as a binary outcome for logistic regression
+placement_data$status_binary <- ifelse(placement_data$status == "Placed", 1, 0)
+
+# Logistic regression model
+logistic_model <- glm(status_binary ~ gender, data = placement_data, family = binomial)
+summary(logistic_model)
+
+# Summarize results in a readable format
+logistic_summary <- tidy(logistic_model)
+print(logistic_summary)
+
+# Step 4: Visualize Placement Rates by Gender with Confidence Intervals
+ggplot(placement_rate, aes(x = gender, y = placement_rate, fill = gender)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.2) +
+  labs(title = "Placement Rates by Gender with 95% Confidence Intervals",
+       x = "Gender",
+       y = "Placement Rate") +
+  scale_fill_manual(values = c("Male" = "skyblue", "Female" = "pink")) +
+  theme_minimal()
+
+# Step 5: Additional Visualization - Mosaic Plot
+# Mosaic plot to display proportions visually
+library(vcd)
+mosaic(~ gender + status, data = placement_data,
+       main = "Mosaic Plot of Placement Status by Gender",
+       shade = TRUE,
+       legend = TRUE)
