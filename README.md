@@ -7,7 +7,7 @@ This repository contains the code and resources for the **Team Research and Deve
 ## **Features**
 - Data preprocessing and cleaning scripts.
 - Statistical analysis, including Chi-Square tests.
-- Visualizations, such as bar charts and histograms.
+- Visualizations, such as bar charts and chart Table
 - Comprehensive R scripts for data exploration and hypothesis testing.
 - Git log tracking for project transparency.
 
