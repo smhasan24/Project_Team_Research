@@ -1,0 +1,17 @@
+Hypothesis_Test_Project/
+│
+├── Hypothesis_Test.Rproj                     # Main R project file
+│
+├── data/                                     # Folder for datasets
+│   └── Placement_Data_Full_Class.csv         # Dataset for analysis
+│
+├── scripts/                                  # Folder for R scripts
+│   ├── hypothesis_test.R                     # Code for hypothesis testing
+│   └── visualization.R                       # Code for visualization
+│
+├── outputs/                                  # Folder for analysis results
+│   ├── chi_square_test_results.txt           # Text file for test results
+│   └── plots/                                # Subfolder for plots
+│       └── normalized_placement_chart.png    # Normalized bar chart
+│
+└── README.md                                 # Documentation for the project
