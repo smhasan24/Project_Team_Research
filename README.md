@@ -91,6 +91,24 @@ dataset <- read.csv('Path where your CSV file is located on your computer\\File 
 ## **Results**
 The key findings of the analysis will be included in the `results/` directory. Statistical outputs and visualizations are provided to support conclusions.
 
+Analysis Methods:
+Proportional Analysis:
+
+The data was grouped by gender and status, and normalized proportions were calculated. Results:
+Female Placement Rate: 63.2%
+Male Placement Rate: 71.9% (Rcode)
+Statistical Test:
+
+Chi-Square Test:
+Test Statistic: X-squared = 1.3818, df = 1
+P-value: 0.2398 (p > 0.05)
+Conclusion: Gender does not have a statistically significant impact on placement status​.
+Logistic Regression (optional step in the updated code):
+
+A logistic regression model was created with gender as the predictor for placement (status_binary coded as 1 for "Placed").
+Summary outputs and confidence intervals were calculated​
+
+
 # **Project: Team Research and Development Assignment**
 
 ## **Visualizations**
