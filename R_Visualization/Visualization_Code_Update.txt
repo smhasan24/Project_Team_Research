@@ -56,3 +56,7 @@ mosaic(~ gender + status, data = placement_data,
        main = "Mosaic Plot of Placement Status by Gender",
        shade = TRUE,
        legend = TRUE)
+       
+       
+       #SM Hasan
+       #Testing update
