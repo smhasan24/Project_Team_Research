@@ -111,6 +111,9 @@ Contributions are welcome! If you’d like to improve or expand the project:
    ```
 4. Push to your branch and create a pull request.
 
+## **Data Privacy**
+The dataset used in this project is anonymous and does not contain personally identifiable information (PII). All data used is for educational purposes only. No data is shared with third parties, and the repository is intended to demonstrate statistical analysis methods.
+
 ## **License**
 This project is for educational purposes and is not distributed under any formal license.
 
