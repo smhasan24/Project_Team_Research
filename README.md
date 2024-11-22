@@ -38,39 +38,61 @@ BarPlot: Scripts specifically for generating bar plots.
 
 
 
-## Getting Started
-
-1. Clone the repository to your local machine.
 
 
-```bash
 
+
+
+
+
+
+# **Project: Team Research and Development**
+
+## **Getting Started**
+
+### **Prerequisites**
+- Ensure you have the following installed:
+  - **R** and **RStudio**
+  - Required R packages:
+    - `ggplot2`
+    - `dplyr`
+    - `tidyr`
+
+### **Setup Instructions**
+1. Clone this repository to your local machine:
+   ```bash
    git clone https://github.com/smhasan24/Project_Team_Research.git
+   cd Project_Team_Research
+   ```
+2. Load the dataset into your preferred tool (e.g., R):
+   ```r
+   dataset <- read.csv("Path/To/Your/CSV_File.csv")
+   ```
+3. Explore the visualizations available in the `visualizations/` folder for initial insights.
+4. Review the project summary in the PowerPoint presentation:  
+   **`A-64 Team Research and Development Presentation Slide.pptx`**.
 
-
-2. Load the dataset in to your preferred tool (i.e., R):
-
-```{r message=FALSE}
-dataset <- read.csv('Path where your CSV file is located on your computer\\File Name.csv')
-
-3.	Look at the visualizations in the R_Visualization folder to get insights on data.
-4.	Go through our PowerPoint presentation for project summary (A-64 Team Research and Development Presentation Slide.pptx) .
-
+---
 
 ## **Features**
 - Data preprocessing and cleaning scripts.
-- Statistical analysis, including Chi-Square tests.
-- Visualizations, such as bar charts and chart Table
+- Statistical analysis using Chi-Square tests.
+- Visualizations, including bar charts and tables.
 - Comprehensive R scripts for data exploration and hypothesis testing.
-- Git log tracking for project transparency.
+- Git log documentation for project transparency.
+
+---
 
 ## **Research Question**
 **"Is there a difference in the proportions of placement status (placed vs. not placed) between male and female students?"**
 
+---
+
 ## **Repository Structure**
+
 ```
 .
-├── data/                # Contains the dataset files
+├── data/                # Dataset files
 ├── scripts/             # R scripts for data analysis
 ├── visualizations/      # Plots and visual outputs
 ├── git_log.xlsx         # Git log tracking all commits
@@ -78,27 +100,34 @@ dataset <- read.csv('Path where your CSV file is located on your computer\\File 
 └── results/             # Final results and reports
 ```
 
+---
+
 ## **Technologies Used**
-- **R**: For statistical analysis and data visualization.
-- **Git**: For version control and collaboration.
+- **R**: For statistical analysis and visualizations.
+- **Git**: For version control.
 - **GitHub**: For project management and file sharing.
 
-## **Getting Started**
-### **Prerequisites**
-- R and RStudio installed.
-- Required R packages:
-  - ggplot2
-  - dplyr
-  - tidyr
+---
 
-### **Setup Instructions**
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/smhasan24/Project_Team_Research.git
-   cd Project_Team_Research
-   ```
-2. Open the R script files in RStudio.
-3. Run the scripts in the `scripts/` directory to perform data analysis and generate visualizations.
+## **Next Steps**
+1. Open the `scripts/` directory and execute the R scripts in RStudio to process data, perform analysis, and generate visualizations.
+2. Refer to the `results/` folder for final outputs and summary reports.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## **Results**
 The key findings of the analysis will be included in the `results/` directory. Statistical outputs and visualizations are provided to support conclusions.
