@@ -4,6 +4,18 @@
 ## **Overview**
 This repository contains the code and resources for the **Team Research and Development Assignment** as part of the coursework. The project analyses placement status among students based on gender using statistical methods. It aims to draw meaningful conclusions about potential disparities and provide actionable insights.
 
+Presentation Slides:
+Key Points:
+
+Introduce the research question and hypothesis.
+Provide dataset overview and preprocessing steps.
+Explain statistical methods (Chi-Square test, proportions) and results.
+Include stacked bar charts and confidence intervals for visual support.
+Interpret findings:
+No statistically significant difference between genders.
+Suggest focusing on other factors (e.g., academic performance, work experience).
+
+
 ## 1. Research Question and Hypothesis:
 Research Question: Is there a difference in the proportions of placement status (placed vs. not placed) between male and female students?
 
