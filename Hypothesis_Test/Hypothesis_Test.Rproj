@@ -4,10 +4,16 @@ RestoreWorkspace: Default
 SaveWorkspace: Default
 AlwaysSaveHistory: Default
 
+# Enable advanced features for better project organization
 EnableCodeIndexing: Yes
 UseSpacesForTab: Yes
-NumSpacesForTab: 2
+NumSpacesForTab: 4
 Encoding: UTF-8
 
 RnwWeave: Sweave
 LaTeX: pdfLaTeX
+
+AutoAppendNewline: Yes
+TabOrientation: Left
+
+# Logical structure for a scalable hypothesis testing project  
