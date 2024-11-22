@@ -4,6 +4,14 @@
 ## **Overview**
 This repository contains the code and resources for the **Team Research and Development Assignment** as part of the coursework. The project analyses placement status among students based on gender using statistical methods. It aims to draw meaningful conclusions about potential disparities and provide actionable insights.
 
+## 1. Research Question and Hypothesis:
+Research Question: Is there a difference in the proportions of placement status (placed vs. not placed) between male and female students?
+
+Null Hypothesis (H₀): No difference exists in the proportions of employment status based on gender.
+
+Alternative Hypothesis (H₁): A difference exists in the proportions of employment status based on gender.
+
+
 ## What's Inside
 
 - **R_Visualization/**: R scripts used to create different visualizations of the data.
