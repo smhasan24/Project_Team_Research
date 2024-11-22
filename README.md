@@ -89,7 +89,7 @@ The key findings of the analysis will be included in the `results/` directory. S
 The project includes statistical visualizations generated using R. Below is an example of a stacked bar chart with normalized proportions created to visualize the relationship between gender and placement status:
 
 ### Stacked Bar Chart
-![Stacked Bar Chart](BarPlot/Normalized_Placement_Status_By_Gender.jpg)
+![Stacked Bar Chart](R_Visualization/Normalized_Placement_Status_By_Gender.jpg)
 
 > *This chart illustrates the proportion of placed and not placed students by gender.*
 
