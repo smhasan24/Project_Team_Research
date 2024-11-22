@@ -117,6 +117,11 @@ The dataset used in this project is anonymous and does not contain personally id
 ## **License**
 This project is for educational purposes and is not distributed under any formal license.
 
+## **Acknowledgements**
+- **R Community**: Special thanks to the R community for creating and maintaining valuable resources for statistical analysis and visualization.
+- **Stack Overflow**: For the helpful solutions and discussions that guided us through several implementation challenges.
+- **GitHub**: For providing a platform for collaboration and version control throughout the project.
+
 ## **Contact**
 For questions or feedback, please contact:
 - **SM Hasan**: [GitHub Profile](https://github.com/smhasan24)
