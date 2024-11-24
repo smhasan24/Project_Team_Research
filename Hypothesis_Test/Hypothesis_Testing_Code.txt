@@ -41,6 +41,21 @@ dbl (7): sl_no, ssc_p, hsc_p, degree_p, etest_p, mba_p, salary
 > # Perform Chi-Square Test
 > chi_test <- chisq.test(placement_table)
 > 
+> # Step 5: Display the results
+> print(chi_test)
+
+> # Step 6 (Optional): Detailed outputs
+> # Display the observed and expected frequencies
+> print("Observed Counts:")
+> print(chi_test$observed)
+> print("Expected Counts:")
+> print(chi_test$expected)
+> # Interpretation based on p-value
+> if (chi_test$p.value < 0.05) {
+>  print("Result: Significant - Reject the Null Hypothesis (H₀)")
+> } else {
+>  print("Result: Not Significant - Fail to Reject the Null Hypothesis (H₀)")
+> }
 > # Display results
 > chi_test
 
