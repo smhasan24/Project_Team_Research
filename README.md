@@ -26,19 +26,19 @@ Alternative Hypothesis (H₁): A difference exists in the proportions of employm
 
 ## What's Inside
 
+
+- **Hypothesis Testing**:
+This hypothesis is tested to investigate potential disparities in placement outcomes based on gender. The analysis provides insights into whether placement programs should incorporate gender-specific interventions or focus on other factors influencing employability.
+
 - **R_Visualization/**: R scripts used to create different visualizations of the data.
 
-BarPlot: Scripts specifically for generating bar plots.
+  BarPlot: Scripts specifically for generating bar plots.
 
 .gitignore: Lists files that Git should ignore (like temporary files).
 
 - **A-64 Team Research and Development Presentation Slide.pptx**: A PowerPoint presentation of our team research and result.
   
 - **Dataset_Placement_Data_Full_Class.csv**: The main dataset containing students placement detail.
-
-
-
-
 
 
 
@@ -149,6 +149,7 @@ Logistic Regression (optional step in the updated code):
 A logistic regression model was created with gender as the predictor for placement (status_binary coded as 1 for "Placed").
 Summary outputs and confidence intervals were calculated​
 
+**Implication**: Gender does not influence placement status, suggesting other factors (e.g., academic performance, work experience) may play a more critical role in determining placement outcomes.
 
 # **Project: Team Research and Development Assignment**
 
