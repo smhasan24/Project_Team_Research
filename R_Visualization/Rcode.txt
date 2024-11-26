@@ -70,8 +70,7 @@ dbl (7): sl_no, ssc_p, hsc_p, degree_p, etest_p, mba_p, salary
 can override using the `.groups` argument.
 > 
 > print(placement_normalized)
-# A tibble: 4 × 5
-# Groups:   gender [2]
+
   gender status     count total proportion
   <fct>  <fct>      <int> <int>      <dbl>
 1 F      Not Placed    28    76      0.368
@@ -80,9 +79,6 @@ can override using the `.groups` argument.
 4 M      Placed       100   139      0.719
 > 
 > 
-> 
-> 
-> # Step 2: Stacked, Normalized Bar Chart
 > ggplot(placement_normalized, aes(x = gender, y = proportion, fill = status)) +
 +     geom_bar(stat = "identity", position = "fill") +  # "fill" for normalized stacking
 +     labs(title = "Normalized Placement Status by Gender",
