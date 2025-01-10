@@ -161,6 +161,11 @@ Commit Message: [Update README.md] This commit involves updates to the README.md
 6. Conclusions: 
     6.1 Results explained (75 words)
 The Chi-Square test yielded a p-value greater than 0.05, indicating no significant difference in job placement rates between male and female graduates. This suggests that within the dataset analyzed, gender does not appear to be a determinant factor influencing employment outcomes after graduation.
+    6.2 Interpretation of the results (75 words)
+These findings imply that gender disparities, at least in this educational context, may not be as pronounced in affecting employment status as previously thought. The lack of significant differences challenges some existing assumptions about gender bias in career placements and suggests that other factors may be more critical in determining employment outcomes.
+
+    6.3 Reasons and/or implications for future work, limitations of your study (50 words)
+Future research should explore other potential influencers of job placement, such as field of study, academic performance, and socio-economic background. The study's limitation lies in its focus on one institution, which may not reflect broader industry or regional employment trends, suggesting the need for more expansive, diverse datasets.
 
 7. Reference list
          1. Lee, S. and Chang, H. (2022) 'Gender Disparities in Job Placements Post-College', Journal of Education and Work, 35(2), pp. 118-134.
