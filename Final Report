@@ -133,6 +133,8 @@ This suggests that gender may be an influencing factor in the job placement rate
    4.1    Statistical test used to test the hypotheses and output (75 words)
 A Chi-Square test was employed to assess if differences in placement rates between genders are statistically significant. This test is appropriate for the research question as it evaluates the association between two categorical variables: gender and placement status. The output indicated a p-value greater than 0.05, suggesting no significant difference in placement rates between male and female students. This led to accepting the null hypothesis that gender does not affect placement outcomes.
 
+  4.2     The null hypothesis is rejected /not rejected based on the p-value (100 words)
+Based on the p-value of 0.2398, which is greater than the conventional threshold of 0.05, the null hypothesis is not rejected. This outcome indicates that there is no statistically significant difference in the proportions of employment status (placed vs. not placed) between male and female students. The result suggests that gender does not have a measurable impact on placement outcomes within the dataset examined. Therefore, any observed differences in placement rates between genders appear to be due to random variation rather than a systematic bias or underlying disparity linked to gender.
 
 
 
@@ -163,3 +165,56 @@ Commit Message: [Update README.md] This commit involves updates to the README.md
 
 
 8. Appendices
+
+A. R code used for analysis and visualisation: 
+# Load necessary libraries
+library(ggplot2)
+library(dplyr)
+library(readr)  # For read_csv function which is better for reading CSV files
+
+# Ensure the correct file path is used and handle potential errors
+file_path <- "D://01. Team Research and Development/02. Dataset.csv"
+
+# Check if the file exists to prevent runtime errors
+if (!file.exists(file_path)) {
+  stop("File does not exist:", file_path)
+}
+
+# Load the dataset using readr for better handling of data types
+placement_data <- read_csv(file_path)
+
+# Convert relevant columns to factors for categorical analysis
+placement_data$gender <- as.factor(placement_data$gender)
+placement_data$status <- as.factor(placement_data$status)
+
+# Calculate Proportions for Normalization
+placement_normalized <- placement_data %>%
+  group_by(gender, status) %>%
+  summarise(count = n(), .groups = 'drop') %>%  # Properly drop groups after summarising
+  mutate(total = sum(count),
+         proportion = count / total)  # Calculate proportion within each group
+
+# Print the normalized placement data
+print(placement_normalized)
+
+# A tibble: 4 × 5
+  gender status     count total proportion
+  <fct>  <fct>      <int> <int>      <dbl>
+1 F      Not Placed    28   215      0.130
+2 F      Placed        48   215      0.223
+3 M      Not Placed    39   215      0.181
+4 M      Placed       100   215      0.465
+
+
+# Visualize Normalized Placement Status by Gender
+ggplot(placement_normalized, aes(x = gender, y = proportion, fill = status)) +
+  geom_bar(stat = "identity", position = "fill") +  # Use "fill" for normalized stacking
+  labs(title = "Normalized Placement Status by Gender",
+       x = "Gender",
+       y = "Proportion",
+       fill = "Placement Status") +
+  scale_y_continuous(labels = scales::percent) +  # Convert y-axis to percentage format
+  scale_fill_manual(values = c("Placed" = "blue", "Not Placed" = "red")) +
+  theme_minimal()  # Use a minimal theme for a clean plot appearance
+
+
