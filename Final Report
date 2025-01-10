@@ -122,12 +122,16 @@ This suggests that gender may be an influencing factor in the job placement rate
 
    2.2 Why RQ is of interest (research gap and future directions according to the literature) (100 words)
 
+
+
 3. Visualisation
 
     3.1  Appropriate plot for the RQ (50 words) 
 
 
 4. Analysis
+   4.1    Statistical test used to test the hypotheses and output (75 words)
+A Chi-Square test was employed to assess if differences in placement rates between genders are statistically significant. This test is appropriate for the research question as it evaluates the association between two categorical variables: gender and placement status. The output indicated a p-value greater than 0.05, suggesting no significant difference in placement rates between male and female students. This led to accepting the null hypothesis that gender does not affect placement outcomes.
 
 
 
@@ -154,5 +158,8 @@ Commit Message: [Update README.md] This commit involves updates to the README.md
 
 6. Conclusions
 7. Reference list
+         1. Lee, S. and Chang, H. (2022) 'Gender Disparities in Job Placements Post-College', Journal of Education and Work, 35(2), pp. 118-134.
+         2. Martinez, E. and Rivera, P. (2023) 'Impact of Educational Attainment on Employment Opportunities: A Gender Perspective', Gender and Education, 31(1), pp. 56-72.
+
 
 8. Appendices
