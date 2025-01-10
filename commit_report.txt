@@ -1,0 +1,303 @@
+C:\Users\hp\Documents\Team Research and Development folder\git_Team_Research_and_Development_folder\Project_Team_Research>git log
+commit f3070f75f11902a7169fd2668af95ebb26a51a1f (HEAD -> main, origin/main, origin/HEAD)
+Author: smhasan <smhasan@canidium.com>
+Date:   Fri Jan 10 15:03:05 2025 +0000
+
+    update project
+
+commit 5059e3caa3df512701682b4ed2e756b8c841461b
+Author: S M Mahamudul Hasan <sh24adp@herts.ac.uk>
+Date:   Fri Jan 10 20:54:59 2025 +0600
+
+    Chi-Square Test with result Update in Appendix in Final Report
+
+commit c0755d416e75eb3ffb2cade213ea5e292e54ccb3
+Author: S M Mahamudul Hasan <sh24adp@herts.ac.uk>
+Date:   Fri Jan 10 20:54:01 2025 +0600
+
+    Appendix Chi-Square Test code Update in Final Report
+
+commit ad8e7ff2107f81668e19cb3d95d9be89c676fd28
+Author: S M Mahamudul Hasan <sh24adp@herts.ac.uk>
+Date:   Fri Jan 10 20:48:36 2025 +0600
+
+    conclution of our final result Update Final Report
+
+commit 2180bae83774fe93b06f59b249623c2166695c6a
+Author: S M Mahamudul Hasan <sh24adp@herts.ac.uk>
+Date:   Fri Jan 10 20:47:11 2025 +0600
+
+    Results explained in conclution  Final Report Update
+
+commit 834ec0a892b250d5d4f980e7990f38323e9f926d
+Author: S M Mahamudul Hasan <sh24adp@herts.ac.uk>
+Date:   Fri Jan 10 20:45:41 2025 +0600
+
+    Reference add in Final Report
+
+commit 9e4eddd8398493a9d554d4a9a3786496cb052d22
+Author: Md-Sahidul-Islam-Chowdhury <mc24aby@herts.ac.uk>
+Date:   Fri Jan 10 12:24:11 2025 +0000
+
+    Update Final Report
+
+commit bb13e5081161a8258b72c1916bd17c154c1a7e58
+Author: Md-Sahidul-Islam-Chowdhury <mc24aby@herts.ac.uk>
+Date:   Fri Jan 10 12:22:41 2025 +0000
+
+    Update Final Report
+
+commit 4ae51797e40181676fd101d0c7ceb71b877c4f35
+Author: mh24abo <mh24abo@herts.ac.uk>
+Date:   Fri Jan 10 04:58:52 2025 +0000
+
+    Update Final Report
+
+commit 86f3614986cdba76c1a26ab7a3710f8221286b93
+Author: ut24aa <ut24aaa@herts.ac.uk>
+Date:   Fri Jan 10 04:55:23 2025 +0000
+
+    Update Final Report
+
+commit 9057ffcf296a7cef3efaa9c27d6a3333430641a8
+Author: ut24aa <ut24aaa@herts.ac.uk>
+Date:   Fri Jan 10 04:47:48 2025 +0000
+
+    Update Final Report
+
+commit afbbfe740d0564b5231b2201736e0b9386a31389
+Author: mh24abo <mh24abo@herts.ac.uk>
+Date:   Fri Jan 10 04:42:32 2025 +0000
+
+    Update Final Report
+
+commit 4819864961ef6f828b7ba96e3db5133838b27acc
+Author: mh24abo <mh24abo@herts.ac.uk>
+Date:   Fri Jan 10 04:18:03 2025 +0000
+
+    Create Final Report
+
+commit 486408102ccde8d777aef30004acef878c8aa7c4
+Author: S M Mahamudul Hasan <sh24adp@herts.ac.uk>
+Date:   Tue Nov 26 17:42:46 2024 +0600
+
+    R_proj update
+
+    Comment add in r_proj file
+
+commit 2f6ade0ddb57adef13ec23f88f0061ba5f3597d8
+Author: S M Mahamudul Hasan <sh24adp@herts.ac.uk>
+Date:   Tue Nov 26 17:41:34 2024 +0600
+
+    Code Update
+
+    R Visualization code update
+
+commit 5d4ffd4ad2b486745fd01e8ebceea8d98c727b1f
+Author: ut24aa <ut24aaa@herts.ac.uk>
+Date:   Sun Nov 24 14:24:09 2024 +0000
+
+    Update README.md
+
+commit 608ebe8d4b711c4b8c87b40aea30f39625b3dbd6
+Author: mh24abo <mh24abo@herts.ac.uk>
+Date:   Sun Nov 24 14:09:13 2024 +0000
+
+    Update Hypothesis_Testing_Code.txt
+
+    updated
+
+commit be006307370e499f2df52afe91ee8e211e5640a1
+Author: ut24aa <ut24aaa@herts.ac.uk>
+Date:   Fri Nov 22 23:49:57 2024 +0000
+
+    Update Hypothesis_Test.Rproj
+
+    updated
+
+commit 9a95a43acfe402d60a7211d071c23318a299abfa
+Author: mh24abo <mh24abo@herts.ac.uk>
+Date:   Fri Nov 22 23:34:33 2024 +0000
+
+    Create Updated project Structure
+
+    update
+
+commit 65d5383f502fe5908cc08b6e2673348fc4547b63
+Author: S M Mahamudul Hasan <sh24adp@herts.ac.uk>
+Date:   Fri Nov 22 20:57:25 2024 +0600
+
+    Update README.md
+
+    update Readmi new
+
+commit 962c807dbb7aab2a50f98f077dbab460f0c90fee
+Author: smhasan <smhasan@canidium.com>
+Date:   Fri Nov 22 14:44:40 2024 +0000
+
+    test Hasan
+
+commit c22f05a9b26706dab82235c2a07625281b26a7cc
+Author: mh24abo <mh24abo@herts.ac.uk>
+Date:   Fri Nov 22 14:22:20 2024 +0000
+
+    Update README.md
+
+commit 53ed5647e70814a9a275e582e69376a1e20348e3
+Author: ut24aa <ut24aaa@herts.ac.uk>
+Date:   Fri Nov 22 14:16:37 2024 +0000
+
+    Update README.md
+
+commit ececad609418348906c8dc817331833e5b16a12d
+Author: ut24aa <ut24aaa@herts.ac.uk>
+Date:   Fri Nov 22 14:10:12 2024 +0000
+
+    Update README.md
+
+commit 9a22a561306c8d92554279d5fb25be062e7905a8
+Author: Md. Mostafizur Rahaman Anik <ma24agi@herts.ac.uk>
+Date:   Fri Nov 22 13:54:02 2024 +0000
+
+    Update README.md
+
+commit 514773e530a965e05675960a40e49022d283bcd3
+Author: Md-Sahidul-Islam-Chowdhury <mc24aby@herts.ac.uk>
+Date:   Fri Nov 22 12:45:38 2024 +0000
+
+    Update README.md
+
+commit 5666ee44063f0424392a110ccb27b827fc80e67a
+Author: Md-Sahidul-Islam-Chowdhury <mc24aby@herts.ac.uk>
+Date:   Fri Nov 22 12:35:31 2024 +0000
+
+    Update README.md
+
+commit 32c6dd82ed7e5fc8b201efa059fcbc123a64a65c
+Author: smhasan <smhasan@canidium.com>
+Date:   Thu Nov 21 23:57:36 2024 +0000
+
+    Hypothesis_Testing_Code_Update
+
+commit 46df43a932bab2198fdc81558472989bfb96c7bc
+Author: ma24agi <ma24agi@herts.ac.uk>
+Date:   Thu Nov 21 23:43:27 2024 +0000
+
+    Update README.md
+
+commit 3aa300b4de1cf777ddf545cf7ea1fae8279527af
+Merge: 56677f4 773d3f5
+Author: smhasan <smhasan@canidium.com>
+Date:   Thu Nov 21 23:40:28 2024 +0000
+
+    Merge branch 'main' of https://github.com/smhasan24/Project_Team_Research
+
+commit 773d3f58fbf15cb124c9057b296e8de91458b123
+Author: ma24agi <ma24agi@herts.ac.uk>
+Date:   Thu Nov 21 23:39:25 2024 +0000
+
+    Update README.md
+
+commit 56677f411511d9ab0b7b66a1fe6ac62458b6dbc4
+Author: smhasan <smhasan@canidium.com>
+Date:   Thu Nov 21 23:38:55 2024 +0000
+
+    Re Organised the code and plots
+
+commit 4522cab080c8cb8447116aa3bebba52719763aec
+Author: ma24agi <ma24agi@herts.ac.uk>
+Date:   Thu Nov 21 23:38:12 2024 +0000
+
+    Update README.md
+
+commit 03fe8109ce671f95739111db142bd56403a10a99
+Merge: 0bffe27 1dacd6e
+Author: smhasan <smhasan@canidium.com>
+Date:   Thu Nov 21 23:33:10 2024 +0000
+
+    Merge branch 'main' of https://github.com/smhasan24/Project_Team_Research
+
+commit 0bffe2749e9f7a8d4d4e0cf1b8a4376f2f360c59
+Author: smhasan <smhasan@canidium.com>
+Date:   Thu Nov 21 23:32:47 2024 +0000
+
+    modify Commit
+
+commit 1dacd6e3c62437e0e53d795743d5790bb0bd400a
+Author: S M Mahamudul Hasan <sh24adp@herts.ac.uk>
+Date:   Fri Nov 22 05:23:42 2024 +0600
+
+    Update README.md
+
+    update readmi
+
+commit 0000ab96d261aac119934091720165bd981b8a59
+Author: S M Mahamudul Hasan <sh24adp@herts.ac.uk>
+Date:   Fri Nov 22 05:21:57 2024 +0600
+
+    Update README.md
+
+    update image
+
+commit afb8424f754c32cdc6ae58b360330f48959810f2
+Author: S M Mahamudul Hasan <sh24adp@herts.ac.uk>
+Date:   Fri Nov 22 05:03:11 2024 +0600
+
+    Update README.md
+
+    We updated our readme file here, adding all the descriptions, codes, and other information.
+
+commit f06fff972e277a06212fc94c52adbdffd1af9bd9
+Author: smhasan <smhasan@canidium.com>
+Date:   Mon Nov 18 16:17:47 2024 +0000
+
+    ppt slide upload
+
+commit 4e68bbf0d06aa91b003984820fe784a9f69b3343
+Author: smhasan <smhasan@canidium.com>
+Date:   Mon Nov 18 15:16:10 2024 +0000
+
+    P value Calculation
+
+commit a8127259c1ac0fff12c5568baa7e265508c39271
+Author: smhasan <smhasan@canidium.com>
+Date:   Wed Nov 13 19:20:49 2024 +0000
+
+    update
+
+commit 0df80cfd3deba5d1b5fe3a5a0acc39e891734946
+Author: smhasan <smhasan@canidium.com>
+Date:   Wed Nov 13 19:18:11 2024 +0000
+
+    Previous code Update
+
+commit 5fc455b1dde9be0921765112354298ff30714c11
+Author: smhasan <smhasan@canidium.com>
+Date:   Wed Nov 13 19:15:28 2024 +0000
+
+    stacked_Bar_chart_Normalized
+
+commit b6a209d757265f7f5beb687d817d08ebd81c03b9
+Author: smhasan <smhasan@canidium.com>
+Date:   Mon Nov 11 14:50:51 2024 +0000
+
+    Research Question Visualization
+
+commit 80b5aa5b825f19b7af98c8384c36ed68b7b84f76
+Author: smhasan <smhasan@canidium.com>
+Date:   Mon Nov 11 14:48:00 2024 +0000
+
+    Dataset update
+
+commit 05aa15a8c8ad08c6e53949ca8fa6a1a08de8e15c
+Author: smhasan <smhasan@canidium.com>
+Date:   Mon Nov 11 14:41:15 2024 +0000
+
+    Research_Question_Visualization
+
+commit 01204f591333e7348a3d503b0f3dbe254836c6e3
+Author: S M Mahamudul Hasan <sh24adp@herts.ac.uk>
+Date:   Mon Nov 11 20:35:56 2024 +0600
+
+    Initial commit
+(END)
