@@ -1,0 +1,86 @@
+
+
+
+
+
+
+
+
+7COM1079-0901-2024 - Team Research and Development Project
+
+
+Final report title: Gender Disparities in Graduate Job Placement: An Analytical Study
+
+Group ID: A64
+Dataset number: DS331
+
+
+
+
+
+
+
+Prepared by: 
+
+                       S M Mahamudul Hasan       23106367
+                       Mahmud Hyader                    23074222
+                       Umma Tasmim                      23073489
+                       Md. Mostafizur Rahaman Anik      23093747       
+                       Md Sahidul Islam Chowdhury     23095949                       
+                                                       
+
+
+
+
+
+
+
+
+
+University of Hertfordshire
+Hatfield, 2024
+
+
+
+Table of Contents
+
+Introduction                                                                           
+Problem statement and research motivation —------------------------------ 3
+The data set  —------------------------------------------------------------------- 3
+Research question —------------------------------------------------------------ 3
+Null hypothesis and alternative hypothesis (H0/H1) —-------------------- 3
+ 
+Background research                                                                                             
+Research papers (at least 3 relevant to your topic / DS) —---------------- 4
+Why RQ is of interest (research gap and future directions according to the literature) —----------------------------------------------------------------------  4
+ 
+Visualisation                                                                                                         
+Appropriate plot for the RQ output of an R script (NOT a screenshot) — 4
+Additional information relating to understanding the data (optional) —-- 5
+Useful information for data understanding —--------------------------------- 5
+ 
+Analysis                                                                                                               
+Statistical tests are used to test the hypotheses and output —-------------- 5
+The null hypothesis is rejected /not rejected based on the p-value —------ 5
+ 
+Evaluation – group’s experience at 7COM1079                                                
+What went well —----------------------------------------------------------------  6
+Points for improvement —------------------------------------------------------  6
+Group’s time management —---------------------------------------------------  6
+The project’s overall judgement —--------------------------------------------- 6
+Comment on the GitHub log output —----------------------------------------- 7
+ 
+Conclusions                                                                                                      
+Results explained. —-------------------------------------------------------------- 7
+Interpretation of the results —---------------------------------------------------- 7
+Reasons and/or implications for future work, limitations of your study —- 7
+ 
+Reference list                                                                                                    
+Harvard (author, date) format. —------------------------------------------------------  7 
+Appendices                                                                                                       
+R code is used for analysis and visualisation. —----------------------------------- 8/9
+GitHub log output. —--------------------------------------------------------------- 10/11
+
+
+
+
