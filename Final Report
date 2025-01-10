@@ -158,7 +158,10 @@ Commit Message: [Merge branch 'main' of https://github.com/smhasan24/Project_Tea
 
 Commit Message: [Update README.md] This commit involves updates to the README.md file, which serves as the front page of the repository on GitHub. Updates could include new instructions, better descriptions of the project, additional sections on how to run the code, contribution guidelines, or updated contact information.
 
-6. Conclusions
+6. Conclusions: 
+    6.1 Results explained (75 words)
+The Chi-Square test yielded a p-value greater than 0.05, indicating no significant difference in job placement rates between male and female graduates. This suggests that within the dataset analyzed, gender does not appear to be a determinant factor influencing employment outcomes after graduation.
+
 7. Reference list
          1. Lee, S. and Chang, H. (2022) 'Gender Disparities in Job Placements Post-College', Journal of Education and Work, 35(2), pp. 118-134.
          2. Martinez, E. and Rivera, P. (2023) 'Impact of Educational Attainment on Employment Opportunities: A Gender Perspective', Gender and Education, 31(1), pp. 56-72.
