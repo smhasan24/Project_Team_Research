@@ -256,3 +256,32 @@ cat("Observed Counts:\n")
 print(chi_test$observed)
 cat("Expected Counts:\n")
 
+
+print(chi_test$expected)
+
+   Not Placed Placed
+  F         28     48
+  M         39    100
+> cat("Expected Counts:\n")
+Expected Counts:
+> print(chi_test$expected)
+   
+    Not Placed   Placed
+  F   23.68372 52.31628
+  M   43.31628 95.68372
+
+# Interpretation based on the p-value
+if (chi_test$p.value < 0.05) {
+  cat("Result: Significant - Reject the Null Hypothesis (H0)\n")
+} else {
+  cat("Result: Not Significant - Fail to Reject the Null Hypothesis (H0)\n")
+}
+# Optionally, you can use View() in an interactive R session to inspect the data
+# View(placement_data)
+
+Pearson's Chi-squared test with Yates' continuity correction
+
+data:  placement_table
+X-squared = 1.3818, df = 1, p-value = 0.2398
+
+
