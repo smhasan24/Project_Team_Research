@@ -90,7 +90,11 @@ GitHub log output. —----------------------------------------------------------
 
    1.1    Problem statement and research motivation (100 words)
 
+The modern labour market presents a significant challenge in aligning educational outcomes with employment opportunities, particularly in how gender disparities affect job placement rates post-graduation. Research indicates persistent gender-based differences in career placements despite similar educational achievements. This study aims to investigate whether these disparities persist within our dataset of university graduates, focusing on the proportions of employment status between male and female students. Understanding these dynamics is crucial for developing targeted interventions that promote equitable employment opportunities across genders.
+  
    1.2  The data set (75 words)
+
+The dataset, titled "Placement_Data_Full_Class," comprises records of 215 university graduates, detailed across 15 variables, including gender, education percentages, work experience, and placement status. It captures a broad spectrum of academic achievements and professional placements, specifically concerning post-graduation employment outcomes. Notably, the salary column has 67 missing values, indicating unplaced students or undisclosed earnings (Dataset Source, 2024).
 
    1.3  Research question (50 words)
 Is there a statistically significant difference in the employment status (placed vs. not placed) between male and female graduates?
@@ -102,6 +106,10 @@ To answer this research question, we will employ a Chi-Square test to examine th
 Null Hypothesis (H0):
 There is no difference in the proportions of employment status (placed vs. not placed) between male and female graduates. 
 This implies that gender does not influence the likelihood of job placement among the graduates surveyed in the dataset.
+
+Alternative Hypothesis (H1):
+There is a difference in the proportions of employment status (placed vs. not placed) between male and female graduates. 
+This suggests that gender may be an influencing factor in the job placement rates, with either male or female graduates experiencing higher placement success due to their gender.
 
 
 2.Background research
@@ -125,6 +133,13 @@ This implies that gender does not influence the likelihood of job placement amon
 
 
 5. Evaluation – group’s experience at 7COM1079
+
+    5.1 What went well (75 words)
+Our group excelled in collaborative problem-solving and leveraging diverse expertise to tackle the research question effectively. The synergy during brainstorming sessions and peer review processes led to insightful analyses and refined presentations. Our utilization of GitHub enhanced transparency and coordination, allowing seamless integration of contributions and revisions, which ensured consistency in our final output.
+
+
+    5.2 Points for improvement (75 words)
+ While we managed to meet our goals, the initial phase of the project saw some delays in role assignment and task delegation. Communication can be enhanced, particularly in setting clearer expectations and timelines for individual contributions. Additionally, adopting more robust conflict resolution strategies early on would help in maintaining group harmony and productivity, ensuring smoother project progression.
 
     5.6  Comment on the GitHub log output (50 words)
 The GitHub log output, detailed in Appendix B, reflects substantial collaborative engagement and iterative refinement of our project. It showcases significant commits that align with major milestones, illustrating our developmental progress and effective version control throughout the project's lifecycle.
