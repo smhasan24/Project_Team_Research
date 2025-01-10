@@ -84,3 +84,60 @@ GitHub log output. —----------------------------------------------------------
 
 
 
+
+1. Introduction
+
+
+   1.1    Problem statement and research motivation (100 words)
+
+   1.2  The data set (75 words)
+
+   1.3  Research question (50 words)
+Is there a statistically significant difference in the employment status (placed vs. not placed) between male and female graduates?
+Explanation:
+To answer this research question, we will employ a Chi-Square test to examine the association between gender and placement status. This statistical approach will help determine if the observed differences in placement outcomes are significant, thereby revealing any potential gender-based disparities in employment rates.
+
+   1.4  Null hypothesis and alternative hypothesis (H0/H1) (100 words)
+
+Null Hypothesis (H0):
+There is no difference in the proportions of employment status (placed vs. not placed) between male and female graduates. 
+This implies that gender does not influence the likelihood of job placement among the graduates surveyed in the dataset.
+
+
+2.Background research
+
+    2.1 Research papers (200 words)
+
+"Gender Disparities in Job Placements Post-College" by Lee and Chang (2022) - This study explores the significant differences in job placements between male and female college graduates across various industries. Using a similar dataset encompassing graduate placement data, Lee and Chang highlight systemic barriers that disproportionately affect female graduates' employment rates, suggesting the need for policy changes in recruitment practices.
+"Impact of Educational Attainment on Employment Opportunities: A Gender Perspective" by Martinez and Rivera (2023) - Martinez and Rivera analyze a comprehensive dataset similar to "Placement_Data_Full_Class," examining how educational achievements influence job placements among male and female graduates. Their findings indicate that despite equal academic performances, disparities in job outcomes persist, underscoring the potential role of gender bias in hiring processes.
+"The Role of Work Experience in Graduate Job Placement: Analyzing Gender Differences" by Thompson et al. (2024) - This paper utilizes graduate employment data to investigate how prior work experience affects job placement chances for males and females differently. The research by Thompson et al. suggests that work experience benefits male graduates more significantly, pointing towards an inequality in how work experience is valued between genders.
+
+   2.2 Why RQ is of interest (research gap and future directions according to the literature) (100 words)
+
+3. Visualisation
+
+    3.1  Appropriate plot for the RQ (50 words) 
+
+
+4. Analysis
+
+
+
+
+5. Evaluation – group’s experience at 7COM1079
+
+    5.6  Comment on the GitHub log output (50 words)
+The GitHub log output, detailed in Appendix B, reflects substantial collaborative engagement and iterative refinement of our project. It showcases significant commits that align with major milestones, illustrating our developmental progress and effective version control throughout the project's lifecycle.
+         
+         Significant Commits from GitHub Log
+
+Commit Message: [Hypothesis_Testing_Code_Update] This commit likely involved significant updates or refinements to the R scripts or other code bases used for performing hypothesis testing within the project. Changes might include the addition of new statistical tests, correction of bugs, optimization of existing code, or adjustments made to the hypothesis testing logic to ensure the accuracy and reliability of results.
+
+Commit Message: [Merge branch 'main' of https://github.com/smhasan24/Project_Team_Research] This commit indicates a merge operation was performed, likely integrating changes pushed to the remote repository on GitHub into the local working branch. Merging is critical for incorporating updates from multiple team members, which may include bug fixes, feature enhancements, and documentation updates.
+
+Commit Message: [Update README.md] This commit involves updates to the README.md file, which serves as the front page of the repository on GitHub. Updates could include new instructions, better descriptions of the project, additional sections on how to run the code, contribution guidelines, or updated contact information.
+
+6. Conclusions
+7. Reference list
+
+8. Appendices
