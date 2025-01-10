@@ -231,3 +231,28 @@ ggplot(placement_normalized, aes(x = gender, y = proportion, fill = status)) +
   theme_minimal()  # Use a minimal theme for a clean plot appearance
 
 
+
+R code for chi-Square Test: 
+# Load the readr package for reading CSV files
+library(readr)
+# Load the dataset
+placement_data <- read_csv("D://01. Team Research and Development/02. Dataset.csv")
+# Display the dataset structure (optional, comment out if not needed)
+print(colnames(placement_data))
+print(head(placement_data))
+# Convert 'gender' and 'status' columns to factors for categorical analysis
+placement_data$gender <- as.factor(placement_data$gender)
+placement_data$status <- as.factor(placement_data$status)
+
+# Create a contingency table for the Chi-Square Test
+placement_table <- table(placement_data$gender, placement_data$status)
+
+# Perform the Chi-Square Test
+chi_test <- chisq.test(placement_table)
+# Print the results from the Chi-Square Test
+print(chi_test)
+# Display the observed and expected frequencies for more detailed analysis
+cat("Observed Counts:\n")
+print(chi_test$observed)
+cat("Expected Counts:\n")
+
