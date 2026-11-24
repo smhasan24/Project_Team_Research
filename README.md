@@ -1,195 +1,112 @@
+<div align="center">
 
-# **Project: Team Research and Development Assignment**
+# 🎓 Gender Disparities in Graduate Job Placement
 
-## **Overview**
-This repository contains the code and resources for the **Team Research and Development Assignment** as part of the coursework. The project analyses placement status among students based on gender using statistical methods. It aims to draw meaningful conclusions about potential disparities and provide actionable insights.
+**A statistical study of whether gender affects campus placement outcomes — Chi-square test, proportion analysis and R visualisation**
 
-Presentation Slides:
-Key Points:
+[![R](https://img.shields.io/badge/R-4.4-276DC3?logo=r&logoColor=white)](#-reproduce-the-analysis)
+[![ggplot2](https://img.shields.io/badge/ggplot2-visualisation-1baf7a)](#-visual-evidence)
+[![Test](https://img.shields.io/badge/Chi--square-p%20%3D%200.24-6250d6)](#-results)
+[![Team](https://img.shields.io/badge/Team-A64%20(5%20members)-eb6834)](#-team)
 
-Introduce the research question and hypothesis.
-Provide dataset overview and preprocessing steps.
-Explain statistical methods (Chi-Square test, proportions) and results.
-Include stacked bar charts and confidence intervals for visual support.
-Interpret findings:
-No statistically significant difference between genders.
-Suggest focusing on other factors (e.g., academic performance, work experience).
-
-
-## 1. Research Question and Hypothesis:
-Research Question: Is there a difference in the proportions of placement status (placed vs. not placed) between male and female students?
-
-Null Hypothesis (H₀): No difference exists in the proportions of employment status based on gender.
-
-Alternative Hypothesis (H₁): A difference exists in the proportions of employment status based on gender.
-
-
-## What's Inside
-
-
-- **Hypothesis Testing**:
-This hypothesis is tested to investigate potential disparities in placement outcomes based on gender. The analysis provides insights into whether placement programs should incorporate gender-specific interventions or focus on other factors influencing employability.
-
-- **R_Visualization/**: R scripts used to create different visualizations of the data.
-
-  BarPlot: Scripts specifically for generating bar plots.
-
-.gitignore: Lists files that Git should ignore (like temporary files).
-
-- **A-64 Team Research and Development Presentation Slide.pptx**: A PowerPoint presentation of our team research and result.
-  
-- **Dataset_Placement_Data_Full_Class.csv**: The main dataset containing students placement detail.
-
-
-
-
-
-
-
-# **Project: Team Research and Development**
-
-## **Getting Started**
-
-### **Prerequisites**
-- Ensure you have the following installed:
-  - **R** and **RStudio**
-  - Required R packages:
-    - `ggplot2`
-    - `dplyr`
-    - `tidyr`
-
-### **Setup Instructions**
-1. Clone this repository to your local machine:
-   ```bash
-   git clone https://github.com/smhasan24/Project_Team_Research.git
-   cd Project_Team_Research
-   ```
-2. Load the dataset into your preferred tool (e.g., R):
-   ```r
-   dataset <- read.csv("Path/To/Your/CSV_File.csv")
-   ```
-3. Explore the visualizations available in the `visualizations/` folder for initial insights.
-4. Review the project summary in the PowerPoint presentation:  
-   **`A-64 Team Research and Development Presentation Slide.pptx`**.
+</div>
 
 ---
 
-## **Features**
-- Data preprocessing and cleaning scripts.
-- Statistical analysis using Chi-Square tests.
-- Visualizations, including bar charts and tables.
-- Comprehensive R scripts for data exploration and hypothesis testing.
-- Git log documentation for project transparency.
+## 📌 Research question
 
----
+> **Is there a difference in the proportion of students placed vs not placed between male and female students?**
 
-## **Research Question**
-**"Is there a difference in the proportions of placement status (placed vs. not placed) between male and female students?"**
+| | Hypothesis |
+|---|---|
+| **H₀** | Placement status is independent of gender (equal proportions). |
+| **H₁** | Placement proportions differ by gender. |
 
----
+Significance level: α = 0.05
 
-## **Repository Structure**
+## 📊 Data
 
-```
-.
-├── data/                # Dataset files
-├── scripts/             # R scripts for data analysis
-├── visualizations/      # Plots and visual outputs
-├── git_log.xlsx         # Git log tracking all commits
-├── README.md            # Project documentation
-└── results/             # Final results and reports
+`Dataset_Placement_Data_Full_Class.csv` — 215 MBA students, 15 variables (school, higher-secondary, degree and MBA percentages, specialisation, work experience, employability-test score, placement status, salary). Anonymised; no personally identifiable information.
+
+| Gender | Placed | Not placed | Total | Placement rate |
+|---|:---:|:---:|:---:|:---:|
+| Female | 48 | 28 | 76 | **63.2%** |
+| Male | 100 | 39 | 139 | **71.9%** |
+| **All** | 148 | 67 | 215 | 68.8% |
+
+## 🧪 Method
+
+```mermaid
+flowchart LR
+    A[Load CSV in R] --> B[Contingency table<br/>gender × status]
+    B --> C[Normalised proportions<br/>per gender]
+    B --> D[Pearson Chi-square test<br/>with Yates correction]
+    C --> E[Stacked bar chart]
+    D --> F{p < 0.05?}
+    F -- no --> G[Fail to reject H₀]
 ```
 
----
+An optional logistic regression (placement ~ gender) was also fitted to confirm the direction and size of the effect.
 
-## **Technologies Used**
-- **R**: For statistical analysis and visualizations.
-- **Git**: For version control.
-- **GitHub**: For project management and file sharing.
+## ✅ Results
 
----
+| Statistic | Value |
+|---|---|
+| χ² | 1.3818 |
+| Degrees of freedom | 1 |
+| **p-value** | **0.2398** |
+| Decision | Fail to reject H₀ |
 
-## **Next Steps**
-1. Open the `scripts/` directory and execute the R scripts in RStudio to process data, perform analysis, and generate visualizations.
-2. Refer to the `results/` folder for final outputs and summary reports.
+**Conclusion:** the 8.7-point gap in placement rate between male and female students is **not statistically significant** in this sample. Placement programmes should look first at other factors — academic performance, work experience and specialisation — rather than gender-specific interventions.
 
+## 📈 Visual evidence
 
+<p align="center">
+  <img src="R_Visualization/Normalized_Placement_Status_By_Gender.jpg" width="48%" alt="Normalised placement status by gender">
+  <img src="R_Visualization/ProportionVisualization.PNG" width="48%" alt="Placement proportions">
+</p>
 
+## 🗂 Repository structure
 
+```text
+Project_Team_Research/
+├── Dataset_Placement_Data_Full_Class.csv     # dataset (215 rows)
+├── Hypothesis_Test/
+│   ├── Hypothesis_Testing_Code.txt          # R session: contingency table + Chi-square test
+│   └── Hypothesis_Test.Rproj
+├── R_Visualization/
+│   ├── Rcode.txt / Visualization_Code_Update.txt   # ggplot2 code
+│   ├── Normalized_Placement_Status_By_Gender.jpg
+│   └── ProportionVisualization.PNG
+├── Final Report                              # written report (plain text)
+├── A-64 Team Research and Development Presentation Slide.pptx
+└── commit_report.txt                         # git log used as evidence of collaboration
+```
 
+## ▶️ Reproduce the analysis
 
+```r
+install.packages(c("ggplot2", "dplyr", "tidyr"))
 
+df <- read.csv("Dataset_Placement_Data_Full_Class.csv")
+tab <- table(df$gender, df$status)
+prop.table(tab, margin = 1)   # placement rate by gender
+chisq.test(tab)               # X-squared = 1.3818, df = 1, p-value = 0.2398
+```
 
+The full R sessions are in `Hypothesis_Test/Hypothesis_Testing_Code.txt` and `R_Visualization/Rcode.txt`.
 
+## ⚠️ Limitations
 
+- Small sample (76 female students), so the test has limited power to detect a modest effect.
+- Single institution and cohort; results may not generalise.
+- Gender is tested on its own; confounders such as degree percentage or work experience are not controlled for.
 
+## 👥 Team
 
+Module **7COM1079 — Team Research and Development Project**, University of Hertfordshire · Group A64
 
+S M Mahamudul Hasan · Mahmud Hyader · Umma Tasmim · Md. Mostafizur Rahaman Anik · Md Sahidul Islam Chowdhury
 
-
-
-
-## **Results**
-The key findings of the analysis will be included in the `results/` directory. Statistical outputs and visualizations are provided to support conclusions.
-
-Analysis Methods:
-Proportional Analysis:
-
-The data was grouped by gender and status, and normalized proportions were calculated. Results:
-Female Placement Rate: 63.2%
-Male Placement Rate: 71.9% (Rcode)
-Statistical Test:
-
-Chi-Square Test:
-Test Statistic: X-squared = 1.3818, df = 1
-P-value: 0.2398 (p > 0.05)
-Conclusion: Gender does not have a statistically significant impact on placement status​.
-Logistic Regression (optional step in the updated code):
-
-A logistic regression model was created with gender as the predictor for placement (status_binary coded as 1 for "Placed").
-Summary outputs and confidence intervals were calculated​
-
-**Implication**: Gender does not influence placement status, suggesting other factors (e.g., academic performance, work experience) may play a more critical role in determining placement outcomes.
-
-# **Project: Team Research and Development Assignment**
-
-## **Visualizations**
-The project includes statistical visualizations generated using R. Below is an example of a stacked bar chart with normalized proportions created to visualize the relationship between gender and placement status:
-
-### Stacked Bar Chart
-![Stacked Bar Chart](R_Visualization/Normalized_Placement_Status_By_Gender.jpg)
-
-> *This chart illustrates the proportion of placed and not placed students by gender.*
-
-### How to View Visualizations
-All visualizations are stored in the `visualizations/` directory. Clone the repository and navigate to the folder to view additional plots.
-
-
-
-## **Contributing**
-Contributions are welcome! If you’d like to improve or expand the project:
-1. Fork the repository.
-2. Create a feature branch:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add a new feature"
-   ```
-4. Push to your branch and create a pull request.
-
-## **Data Privacy**
-The dataset used in this project is anonymous and does not contain personally identifiable information (PII). All data used is for educational purposes only. No data is shared with third parties, and the repository is intended to demonstrate statistical analysis methods.
-
-## **License**
-This project is for educational purposes and is not distributed under any formal license.
-
-## **Acknowledgements**
-- **R Community**: Special thanks to the R community for creating and maintaining valuable resources for statistical analysis and visualization.
-- **Stack Overflow**: For the helpful solutions and discussions that guided us through several implementation challenges.
-- **GitHub**: For providing a platform for collaboration and version control throughout the project.
-
-## **Contact**
-For questions or feedback, please contact:
-- **SM Hasan**: [GitHub Profile](https://github.com/smhasan24)
+[![Portfolio](https://img.shields.io/badge/Portfolio-hasansm.com-0b0b0b?logo=googlechrome&logoColor=white)](https://hasansm.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-sm--mahamudul--hasan-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sm-mahamudul-hasan)
